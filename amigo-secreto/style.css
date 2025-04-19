@@ -1,0 +1,185 @@
+:root {
+    --color-primary: #3d91ff;
+    --color-secondary: #3d91ffbf;
+    --color-tertiary: #C4C4C4;
+    --color-button: #fe652b;
+    --color-button-hover: #e55720;
+    --color-white: #FFFFFF;
+    --color-text: #f10000;
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('assets/cielo.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 100vh; 
+  }
+  
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/* Banner */
+.header-banner {
+    flex: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 0 0;
+}
+
+.img-mario {
+    width: 17rem;
+}
+
+/* Sección de entrada */
+.input-section {
+    flex: 60%;
+    background-color: var(--color-white);
+    border-radius: 64px 64px 0 0;
+    box-shadow: 6px 6px 40px 40px var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Títulos */
+.main-title {
+    font-size: 60px;
+    font-weight: 900;
+    text-shadow: 
+    0px 1px 0px #ffffff, 
+    -2px -2px 0px #ffffff, 
+    2px -2px 0px rgb(255, 255, 255), 
+    -2px 2px 0px #ffffff; 
+    color: var(--color-text);
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-text);
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Contenedores de entrada y botón */
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.input-name {
+    flex: 1;
+    width: 100%;
+    padding: 10px 30px;
+    border-radius: 25px 0 0 25px;
+    font-size: 16px;
+    border: none;
+    background-color: #3d91ff55;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-right: none;
+    outline: none;
+}
+
+.button-container {
+    width: 300px;
+    justify-content: center;
+}
+
+
+/* Estilos de botón añadir */
+button {
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.button-add {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 0 25px 25px 0;
+}
+
+.button-add:hover {
+    background-color: var(--color-secondary);
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.result-list {
+    color: var(--color-text);
+    font-size: 22px;
+    
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+.name-list {
+    text-transform: uppercase; 
+  }  
+
+/* Botón de sortear título */
+.button-draw {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    box-shadow: 1px 1px 10px var(--color-primary), 1px 1px 10px var(--color-primary);
+    font-size: 18px;
+    border: none;
+}
+
+.button-draw img {
+    margin-right: 30px;
+}
+
+.button-draw:hover {
+    background-color: var(--color-text);
+    box-shadow: 1px 1px 10px var(--color-text), 1px 1px 10px var(--color-text);
+}
+
+/* Estilos del alert */
+.message-box {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffe5e5;
+    color: #d32f2f;
+    font-weight: bold;
+    text-align: center;
+    display: none; /* Por defecto está oculto */
+  }
+  
+  
